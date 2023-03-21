@@ -1,2 +1,2 @@
 # ArchestraQueries
-A library of useful galaxy repository functions/queries.
+Some useful galaxy repository functions/queries/procedures.
