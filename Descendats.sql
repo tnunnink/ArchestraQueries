@@ -1,5 +1,5 @@
 -- =============================================
--- Author:		Timothy Nunnink
+-- Author: Timothy Nunnink
 -- Create date: 9/28/2022
 -- Description:	Gets table of derived objects
 -- from supplied object id table.
