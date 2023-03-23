@@ -1,8 +1,8 @@
 -- =============================================
 -- Author: Timothy Nunnink
 -- Create date: 11/8/2022
--- Description:	Gets table of parent template
--- objects for all object ids in input table.
+-- Description:	Gets a table of parents for all
+-- object ids in provided table.
 -- =============================================
 ALTER FUNCTION [dbo].[Derivations]
 (	
