@@ -2,11 +2,11 @@
 -- Author: Timothy Nunnink
 -- Create date: 11/8/2022
 -- Description:	Gets table of contained objects
--- for the provided object id.
+-- for the provided object id table.
 -- =============================================
 ALTER FUNCTION [dbo].[Contained]
 (	
-	@ObjectId INT
+	@ObjectIds gobject_id_type READONLY
 )
 RETURNS TABLE 
 AS
@@ -19,7 +19,7 @@ RETURN
 			CAST('' AS NVARCHAR(329)) container_name,
 			CAST(g.tag_name as nvarchar(1000)) contained_path
 	FROM gobject g
-	WHERE gobject_id = @ObjectId 
+	WHERE g.gobject_id IN (SELECT * FROM @ObjectIds)
 	UNION ALL
 	SELECT c.base_tag_name,
 			g.*,
