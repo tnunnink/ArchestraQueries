@@ -1,3 +1,11 @@
+-- =============================================
+-- Author: Timothy Nunnink
+-- Create date: 11/8/2022
+-- Description:	Gets a table of depoyed 
+-- object attributes that have history 
+-- extensions configured.
+-- =============================================
+
 CREATE view [dbo].[HistorizedTags] AS
 SELECT g.gobject_id,
 		g.tag_name ObjectName,
